@@ -9,7 +9,7 @@ import (
 type User struct {
 	gorm.Model
 	Name string
-	// 本当は CreaedAt とかも定義したほうが良い
+	// 本当は CreaedAt とかも定義したほうが良い気がする
 }
 
 // AddUser ユーザの新規追加

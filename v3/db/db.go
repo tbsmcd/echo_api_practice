@@ -21,7 +21,7 @@ func Init() {
 	password := "pass"
 	dbname := "echo_practice"
 
-	connect := user + ":" + password + "@tcp(127.0.0.1:3333)/" + dbname
+	connect := user + ":" + password + "@tcp(127.0.0.1:3333)/" + dbname + "?parseTime=true"
 	db, err = gorm.Open("mysql", connect)
 	if err != nil {
 		panic(fmt.Sprintf("[Error]: %s", err))
